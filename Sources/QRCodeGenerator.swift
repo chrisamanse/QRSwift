@@ -21,7 +21,7 @@ private enum Keys: String {
 
 /// The `QRCodeGenerator` class provides a QR Code generator.
 public class QRCodeGenerator {
-    let filter: CIFilter
+    private let filter: CIFilter
     
     /// The correction level of the QR Code. Default value is `.M`.
     public var correctionLevel: QRCodeGeneratorCorrectionLevel = .M {

@@ -9,6 +9,7 @@
 import Foundation
 import CoreImage
 
+/// Correction level options for `QRCodeGenerator`.
 public enum QRCodeGeneratorCorrectionLevel: String {
     case L, M, Q, H
 }
@@ -18,21 +19,33 @@ private enum Keys: String {
     case inputCorrectionLevel
 }
 
+/// The `QRCodeGenerator` class provides a QR Code generator.
 public class QRCodeGenerator {
     let filter: CIFilter
     
+    /// The correction level of the QR Code. Default value is `.M`.
     public var correctionLevel: QRCodeGeneratorCorrectionLevel = .M {
         didSet {
             filter.setValue(correctionLevel.rawValue, forKey: Keys.inputCorrectionLevel.rawValue)
         }
     }
     
+    /// Create a QR Code generator instance
     public init() {
         filter = CIFilter(name: "CIQRCodeGenerator")!
         
         filter.setValue(correctionLevel.rawValue, forKey: Keys.inputCorrectionLevel.rawValue)
     }
     
+    /**
+     Generate QR Code image of type CIImage
+     
+     - parameters:
+        - data: The data to be embedded in the QR Code image.
+        - size: The target size of image. If set to `nil`, the size will be the smallest possible size. Default value is `nil`.
+     
+     - returns: QR Code image of type `CIImage`
+    */
     public func CIImageFrom(data: NSData, withSize size: CGSize? = nil) -> CIImage? {
         filter.setValue(data, forKey: "inputMessage")
         

@@ -49,7 +49,7 @@ let largeImage = generator.CIImageFrom(data, withSize: CGSize(width: 512, height
 
 ```
 
-# LICENSE
+# License
 
 Copyright (c) 2016 Joe Christopher Paul Amanse
 

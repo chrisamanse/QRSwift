@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DFD8ABB91CDAF9F200CF545D /* QRSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD8ABB81CDAF9F200CF545D /* QRSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFD8ABCE1CDAFBD300CF545D /* QRSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD8ABB81CDAF9F200CF545D /* QRSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFD8ABD01CDAFEF700CF545D /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD8ABCF1CDAFEF700CF545D /* QRCodeGenerator.swift */; };
+		DFD8ABD11CDAFEF700CF545D /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD8ABCF1CDAFEF700CF545D /* QRCodeGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +19,7 @@
 		DFD8ABC31CDAFABA00CF545D /* QRSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD8ABCC1CDAFB1A00CF545D /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		DFD8ABCD1CDAFB1A00CF545D /* Info-OSX.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-OSX.plist"; sourceTree = "<group>"; };
+		DFD8ABCF1CDAFEF700CF545D /* QRCodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				DFD8ABB81CDAF9F200CF545D /* QRSwift.h */,
+				DFD8ABCF1CDAFEF700CF545D /* QRCodeGenerator.swift */,
 				DFD8ABCC1CDAFB1A00CF545D /* Info-iOS.plist */,
 				DFD8ABCD1CDAFB1A00CF545D /* Info-OSX.plist */,
 			);
@@ -178,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD8ABD01CDAFEF700CF545D /* QRCodeGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD8ABD11CDAFEF700CF545D /* QRCodeGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +455,7 @@
 				DFD8ABBC1CDAF9F200CF545D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFD8ABC81CDAFABA00CF545D /* Build configuration list for PBXNativeTarget "QRSwift OSX" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +464,7 @@
 				DFD8ABCA1CDAFABA00CF545D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

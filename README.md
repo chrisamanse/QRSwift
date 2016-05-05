@@ -4,9 +4,13 @@ QRSwift is a Swift framework for generating QR codes.
 
 # Installation
 
+## [CocoaPods](https://github.com/CocoaPods/CocoaPods)
+
+Add `pod 'QRSwift'` to your target in your `Podfile`, then run `pod install`.
+
 ## [Carthage](https://github.com/Carthage/Carthage)
 
-Add this to `Cartfile`:
+Add this to your `Cartfile`:
 
 ```
 github "chrisamanse/QRSwift"

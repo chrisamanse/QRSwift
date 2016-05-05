@@ -8,6 +8,9 @@
       location = "container:QRSwift.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:QRSwift.podspec">
+   </FileRef>
+   <FileRef
       location = "group:LICENSE">
    </FileRef>
    <FileRef

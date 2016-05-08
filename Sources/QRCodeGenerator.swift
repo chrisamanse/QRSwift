@@ -57,7 +57,11 @@ public class QRCodeGenerator {
             let scaleX = s.width / image.extent.width
             let scaleY = s.height / image.extent.height
             
-            return image.imageByApplyingTransform(CGAffineTransformMakeScale(scaleX, scaleY))
+            #if swift(>=3.0)
+                return image.applying(CGAffineTransform(withScaleX: scaleX, y: scaleY))
+            #else
+                return image.imageByApplyingTransform(CGAffineTransformMakeScale(scaleX, scaleY))
+            #endif
         } else {
             return image
         }

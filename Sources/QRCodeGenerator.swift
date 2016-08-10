@@ -46,7 +46,7 @@ public class QRCodeGenerator {
      
      - returns: QR Code image of type `CIImage`
     */
-    public func CIImageFrom(data: NSData, withSize size: CGSize? = nil) -> CIImage? {
+    public func CIImageFrom(_ data: Data, withSize size: CGSize? = nil) -> CIImage? {
         filter.setValue(data, forKey: "inputMessage")
         
         guard let image = filter.outputImage else {
@@ -57,11 +57,9 @@ public class QRCodeGenerator {
             let scaleX = s.width / image.extent.width
             let scaleY = s.height / image.extent.height
             
-            #if swift(>=3.0)
-                return image.applying(CGAffineTransform(withScaleX: scaleX, y: scaleY))
-            #else
-                return image.imageByApplyingTransform(CGAffineTransformMakeScale(scaleX, scaleY))
-            #endif
+            let scaleTransform = CGAffineTransform(scaleX: scaleX, y: scaleY)
+            
+            return image.applying(scaleTransform)
         } else {
             return image
         }

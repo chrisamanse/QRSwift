@@ -1,11 +1,13 @@
 //: Playground - noun: a place where people can play
 
-import UIKit
+import Foundation
 import QRSwift
 
 var message = "BEGIN:VCARD\nN:Amanse;Chris\nEND:VCARD"
 
-let data = message.dataUsingEncoding(NSUTF8StringEncoding)!
+let data = message.data(using: .utf8)!
+
+data.count
 
 let generator = QRCodeGenerator()
 

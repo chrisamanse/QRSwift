@@ -31,15 +31,11 @@ $ carthage update
 
 var message = "Hello, World!"
 
-// Encode message into NSData
-let data = message.dataUsingEncoding(NSUTF8StringEncoding)!
+// Encode message as Data
+let data = message.data(using: .utf8)!
 
 // Create generator object
-let generator = QRCodeGenerator()
-
-// Set correction level of QR Code - .L, .M, .Q, or .H
-// Default value of .M
-generator.correctionLevel = .M
+let generator = QRCodeGenerator(correctionLevel: .M)
 
 // QR Code CIImage with default size
 let image = generator.CIImageFrom(data)

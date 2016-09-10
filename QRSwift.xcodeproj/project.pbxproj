@@ -17,8 +17,7 @@
 		DFD8ABB51CDAF9F200CF545D /* QRSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD8ABB81CDAF9F200CF545D /* QRSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRSwift.h; sourceTree = "<group>"; };
 		DFD8ABC31CDAFABA00CF545D /* QRSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFD8ABCC1CDAFB1A00CF545D /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		DFD8ABCD1CDAFB1A00CF545D /* Info-OSX.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-OSX.plist"; sourceTree = "<group>"; };
+		DFD8ABCC1CDAFB1A00CF545D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFD8ABCF1CDAFEF700CF545D /* QRCodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DFC3D0B81D84CFC30011E9B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFD8ABB81CDAF9F200CF545D /* QRSwift.h */,
+				DFD8ABCC1CDAFB1A00CF545D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		DFD8AB8E1CDAF7D000CF545D = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +68,8 @@
 		DFD8ABCB1CDAFB1A00CF545D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DFD8ABB81CDAF9F200CF545D /* QRSwift.h */,
 				DFD8ABCF1CDAFEF700CF545D /* QRCodeGenerator.swift */,
-				DFD8ABCC1CDAFB1A00CF545D /* Info-iOS.plist */,
-				DFD8ABCD1CDAFB1A00CF545D /* Info-OSX.plist */,
+				DFC3D0B81D84CFC30011E9B1 /* Supporting Files */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -290,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-iOS.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -345,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-iOS.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -408,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-OSX.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -464,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-OSX.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;

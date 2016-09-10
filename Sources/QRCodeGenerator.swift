@@ -9,45 +9,40 @@
 import Foundation
 import CoreImage
 
-/// Correction level options for `QRCodeGenerator`.
-public enum QRCodeGeneratorCorrectionLevel: String {
-    case L, M, Q, H
-}
-
-private enum Keys: String {
+fileprivate enum Keys: String {
     case inputMessage
     case inputCorrectionLevel
 }
 
 /// The `QRCodeGenerator` class provides a QR Code generator.
-public class QRCodeGenerator {
+public struct QRCodeGenerator {
+    
     private let filter: CIFilter
     
-    /// The correction level of the QR Code. Default value is `.M`.
-    public var correctionLevel: QRCodeGeneratorCorrectionLevel = .M {
+    /// The correction level of the QR Code.
+    public var correctionLevel: CorrectionLevel {
         didSet {
             filter.setValue(correctionLevel.rawValue, forKey: Keys.inputCorrectionLevel.rawValue)
         }
     }
     
-    /// Create a QR Code generator instance
-    public init() {
+    /// Create a `QRCodeGenerator` instance with a specified correction level.
+    ///
+    /// - parameter correctionLevel: The correction level for the QR Code. Default value is `M`.
+    public init(correctionLevel: CorrectionLevel = .M) {
         filter = CIFilter(name: "CIQRCodeGenerator")!
         
-        filter.setValue(correctionLevel.rawValue, forKey: Keys.inputCorrectionLevel.rawValue)
+        self.correctionLevel = correctionLevel
     }
     
-    /**
-     Generate QR Code image of type CIImage
-     
-     - parameters:
-        - data: The data to be embedded in the QR Code image.
-        - size: The target size of image. If set to `nil`, the size will be the smallest possible size. Default value is `nil`.
-     
-     - returns: QR Code image of type `CIImage`
-    */
+    /// Generate QR Code image of type CIImage.
+    ///
+    /// - parameter data: The data to be encoded as a QR Code image.
+    /// - parameter size: The target size of image. If set to `nil`, the size will be the smallest possible size. Default value is `nil`.
+    ///
+    /// - returns: The QR code image of type `CIImage`.
     public func CIImageFrom(_ data: Data, withSize size: CGSize? = nil) -> CIImage? {
-        filter.setValue(data, forKey: "inputMessage")
+        filter.setValue(data, forKey: Keys.inputCorrectionLevel.rawValue)
         
         guard let image = filter.outputImage else {
             return nil
@@ -63,5 +58,13 @@ public class QRCodeGenerator {
         } else {
             return image
         }
+    }
+}
+
+
+public extension QRCodeGenerator {
+    /// Correction level options for `QRCodeGenerator`.
+    public enum CorrectionLevel: String {
+        case L, M, Q, H
     }
 }

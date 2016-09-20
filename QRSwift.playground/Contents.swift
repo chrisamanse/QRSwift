@@ -3,16 +3,16 @@
 import Foundation
 import QRSwift
 
-var message = "BEGIN:VCARD\nN:Amanse;Chris\nEND:VCARD"
+var str = "Hello, playground"
 
-let data = message.data(using: .utf8)!
-
-data.count
+let data = str.data(using: .utf8) ?? Data()
 
 let generator = QRCodeGenerator()
 
-// QR Code CIImage with default size
-generator.CIImageFrom(data)
-
-// QR Code CIImage with configured size
-generator.CIImageFrom(data, withSize: CGSize(width: 512, height: 512))
+do {
+    let image = try generator.outputImage(message: data)
+    
+    let enlargedImage = try generator.outputImage(message: data, size: CGSize(width: 64, height: 64))
+} catch QRCodeGeneratorError.dataTooBig {
+    print("Data too big!")
+}

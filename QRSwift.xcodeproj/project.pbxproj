@@ -7,516 +7,341 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DFD8ABB91CDAF9F200CF545D /* QRSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD8ABB81CDAF9F200CF545D /* QRSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFD8ABCE1CDAFBD300CF545D /* QRSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD8ABB81CDAF9F200CF545D /* QRSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFD8ABD01CDAFEF700CF545D /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD8ABCF1CDAFEF700CF545D /* QRCodeGenerator.swift */; };
-		DFD8ABD11CDAFEF700CF545D /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD8ABCF1CDAFEF700CF545D /* QRCodeGenerator.swift */; };
+		DF5FA1101D91313400821F79 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5FA10F1D91313400821F79 /* QRCodeGenerator.swift */; };
+		DF9F5B2D1D91371600DC7EEB /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9F5B2B1D9136AF00DC7EEB /* CoreImage.framework */; };
+		_LinkFileRef_QRSwift_via_QRSwiftTests /* QRSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_QRSwift" /* QRSwift.framework */; };
+		__src_cc_ref_Tests/QRSwiftTests/QRSwiftTests.swift /* QRSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/QRSwiftTests/QRSwiftTests.swift /* QRSwiftTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DFA78A1E1D9119C60093829E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_QRSwift";
+			remoteInfo = QRSwift;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		DFD8ABB51CDAF9F200CF545D /* QRSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFD8ABB81CDAF9F200CF545D /* QRSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRSwift.h; sourceTree = "<group>"; };
-		DFD8ABC31CDAFABA00CF545D /* QRSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFD8ABCC1CDAFB1A00CF545D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFD8ABCF1CDAFEF700CF545D /* QRCodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		DF5FA10F1D91313400821F79 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		DF9F5B2B1D9136AF00DC7EEB /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		DF9F5B2E1D9141F600DC7EEB /* QRSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QRSwift.playground; sourceTree = "<group>"; };
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		__PBXFileRef_QRSwift.xcodeproj/Configs/Project.xcconfig /* QRSwift.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QRSwift.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/QRSwiftTests/QRSwiftTests.swift /* QRSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRSwiftTests.swift; sourceTree = "<group>"; };
+		"_____Product_QRSwift" /* QRSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QRSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_QRSwiftTests" /* QRSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = QRSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DFD8ABB11CDAF9F200CF545D /* Frameworks */ = {
+		"___LinkPhase_QRSwift" /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
+				DF9F5B2D1D91371600DC7EEB /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFD8ABBF1CDAFABA00CF545D /* Frameworks */ = {
+		"___LinkPhase_QRSwiftTests" /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
+				_LinkFileRef_QRSwift_via_QRSwiftTests /* QRSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DFC3D0B81D84CFC30011E9B1 /* Supporting Files */ = {
+		DF9F5B2A1D9136AF00DC7EEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DFD8ABB81CDAF9F200CF545D /* QRSwift.h */,
-				DFD8ABCC1CDAFB1A00CF545D /* Info.plist */,
+				DF9F5B2B1D9136AF00DC7EEB /* CoreImage.framework */,
 			);
-			name = "Supporting Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DFD8AB8E1CDAF7D000CF545D = {
+		TestProducts_ /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DFD8ABCB1CDAFB1A00CF545D /* Sources */,
-				DFD8ABB61CDAF9F200CF545D /* Products */,
+				"_____Product_QRSwiftTests" /* QRSwiftTests.xctest */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		"___RootGroup_" = {
+			isa = PBXGroup;
+			children = (
+				DF9F5B2E1D9141F600DC7EEB /* QRSwift.playground */,
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				"_______Tests_" /* Tests */,
+				"____Products_" /* Products */,
+				DF9F5B2A1D9136AF00DC7EEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		DFD8ABB61CDAF9F200CF545D /* Products */ = {
+		"____Products_" /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DFD8ABB51CDAF9F200CF545D /* QRSwift.framework */,
-				DFD8ABC31CDAFABA00CF545D /* QRSwift.framework */,
+				TestProducts_ /* Tests */,
+				"_____Product_QRSwift" /* QRSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DFD8ABCB1CDAFB1A00CF545D /* Sources */ = {
+		"_____Configs_" /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				DFD8ABCF1CDAFEF700CF545D /* QRCodeGenerator.swift */,
-				DFC3D0B81D84CFC30011E9B1 /* Supporting Files */,
+				__PBXFileRef_QRSwift.xcodeproj/Configs/Project.xcconfig /* QRSwift.xcodeproj/Configs/Project.xcconfig */,
 			);
-			path = Sources;
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_QRSwift" /* QRSwift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_QRSwift" /* QRSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DF5FA10F1D91313400821F79 /* QRCodeGenerator.swift */,
+			);
+			name = QRSwift;
+			path = Sources/QRSwift;
+			sourceTree = "<group>";
+		};
+		"_______Group_QRSwiftTests" /* QRSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Tests/QRSwiftTests/QRSwiftTests.swift /* QRSwiftTests.swift */,
+			);
+			name = QRSwiftTests;
+			path = Tests/QRSwiftTests;
+			sourceTree = "<group>";
+		};
+		"_______Tests_" /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_QRSwiftTests" /* QRSwiftTests */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		DFD8ABB21CDAF9F200CF545D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DFD8ABB91CDAF9F200CF545D /* QRSwift.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DFD8ABC01CDAFABA00CF545D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DFD8ABCE1CDAFBD300CF545D /* QRSwift.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		DFD8ABB41CDAF9F200CF545D /* QRSwift iOS */ = {
+		"______Target_QRSwift" /* QRSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFD8ABBD1CDAF9F200CF545D /* Build configuration list for PBXNativeTarget "QRSwift iOS" */;
+			buildConfigurationList = "_______Confs_QRSwift" /* Build configuration list for PBXNativeTarget "QRSwift" */;
 			buildPhases = (
-				DFD8ABB01CDAF9F200CF545D /* Sources */,
-				DFD8ABB11CDAF9F200CF545D /* Frameworks */,
-				DFD8ABB21CDAF9F200CF545D /* Headers */,
-				DFD8ABB31CDAF9F200CF545D /* Resources */,
+				CompilePhase_QRSwift /* Sources */,
+				"___LinkPhase_QRSwift" /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "QRSwift iOS";
-			productName = "QRSwift iOS";
-			productReference = DFD8ABB51CDAF9F200CF545D /* QRSwift.framework */;
+			name = QRSwift;
+			productName = QRSwift;
+			productReference = "_____Product_QRSwift" /* QRSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DFD8ABC21CDAFABA00CF545D /* QRSwift OSX */ = {
+		"______Target_QRSwiftTests" /* QRSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFD8ABC81CDAFABA00CF545D /* Build configuration list for PBXNativeTarget "QRSwift OSX" */;
+			buildConfigurationList = "_______Confs_QRSwiftTests" /* Build configuration list for PBXNativeTarget "QRSwiftTests" */;
 			buildPhases = (
-				DFD8ABBE1CDAFABA00CF545D /* Sources */,
-				DFD8ABBF1CDAFABA00CF545D /* Frameworks */,
-				DFD8ABC01CDAFABA00CF545D /* Headers */,
-				DFD8ABC11CDAFABA00CF545D /* Resources */,
+				CompilePhase_QRSwiftTests /* Sources */,
+				"___LinkPhase_QRSwiftTests" /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				__Dependency_QRSwift /* PBXTargetDependency */,
 			);
-			name = "QRSwift OSX";
-			productName = "QRSwift OSX";
-			productReference = DFD8ABC31CDAFABA00CF545D /* QRSwift.framework */;
-			productType = "com.apple.product-type.framework";
+			name = QRSwiftTests;
+			productName = QRSwiftTests;
+			productReference = "_____Product_QRSwiftTests" /* QRSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DFD8AB8F1CDAF7D000CF545D /* Project object */ = {
+		__RootObject_ /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 9999;
 				TargetAttributes = {
-					DFD8ABB41CDAF9F200CF545D = {
-						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0800;
-					};
-					DFD8ABC21CDAFABA00CF545D = {
-						CreatedOnToolsVersion = 7.3;
+					"______Target_QRSwift" = {
 						LastSwiftMigration = 0800;
 					};
 				};
 			};
-			buildConfigurationList = DFD8AB921CDAF7D000CF545D /* Build configuration list for PBXProject "QRSwift" */;
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "QRSwift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = DFD8AB8E1CDAF7D000CF545D;
-			productRefGroup = DFD8ABB61CDAF9F200CF545D /* Products */;
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DFD8ABB41CDAF9F200CF545D /* QRSwift iOS */,
-				DFD8ABC21CDAFABA00CF545D /* QRSwift OSX */,
+				"______Target_QRSwift" /* QRSwift */,
+				"______Target_QRSwiftTests" /* QRSwiftTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		DFD8ABB31CDAF9F200CF545D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DFD8ABC11CDAFABA00CF545D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		DFD8ABB01CDAF9F200CF545D /* Sources */ = {
+		CompilePhase_QRSwift /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				DFD8ABD01CDAFEF700CF545D /* QRCodeGenerator.swift in Sources */,
+				DF5FA1101D91313400821F79 /* QRCodeGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFD8ABBE1CDAFABA00CF545D /* Sources */ = {
+		CompilePhase_QRSwiftTests /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				DFD8ABD11CDAFEF700CF545D /* QRCodeGenerator.swift in Sources */,
+				__src_cc_ref_Tests/QRSwiftTests/QRSwiftTests.swift /* QRSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		__Dependency_QRSwift /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_QRSwift" /* QRSwift */;
+			targetProxy = DFA78A1E1D9119C60093829E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		DFD8AB931CDAF7D000CF545D /* Debug */ = {
+		_ReleaseConf_QRSwift /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
-			};
-			name = Debug;
-		};
-		DFD8AB941CDAF7D000CF545D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = QRSwift.xcodeproj/QRSwift_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = QRSwift;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		DFD8ABBB1CDAF9F200CF545D /* Debug */ = {
+		_ReleaseConf_QRSwiftTests /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = QRSwift.xcodeproj/QRSwiftTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks @executable_path/../Frameworks @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		"___DebugConf_QRSwift" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisamanse.QRSwift-iOS";
-				PRODUCT_NAME = QRSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = QRSwift.xcodeproj/QRSwift_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = QRSwift;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		DFD8ABBC1CDAF9F200CF545D /* Release */ = {
+		"___DebugConf_QRSwiftTests" /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisamanse.QRSwift-iOS";
-				PRODUCT_NAME = QRSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DFD8ABC91CDAFABA00CF545D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisamanse.QRSwift-OSX";
-				PRODUCT_NAME = QRSwift;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = QRSwift.xcodeproj/QRSwiftTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks @executable_path/../Frameworks @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		DFD8ABCA1CDAFABA00CF545D /* Release */ = {
+		"_____Release_" /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_QRSwift.xcodeproj/Configs/Project.xcconfig /* QRSwift.xcodeproj/Configs/Project.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisamanse.QRSwift-OSX";
-				PRODUCT_NAME = QRSwift;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		"_______Debug_" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_QRSwift.xcodeproj/Configs/Project.xcconfig /* QRSwift.xcodeproj/Configs/Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DFD8AB921CDAF7D000CF545D /* Build configuration list for PBXProject "QRSwift" */ = {
+		"___RootConfs_" /* Build configuration list for PBXProject "QRSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFD8AB931CDAF7D000CF545D /* Debug */,
-				DFD8AB941CDAF7D000CF545D /* Release */,
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		DFD8ABBD1CDAF9F200CF545D /* Build configuration list for PBXNativeTarget "QRSwift iOS" */ = {
+		"_______Confs_QRSwift" /* Build configuration list for PBXNativeTarget "QRSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFD8ABBB1CDAF9F200CF545D /* Debug */,
-				DFD8ABBC1CDAF9F200CF545D /* Release */,
+				"___DebugConf_QRSwift" /* Debug */,
+				_ReleaseConf_QRSwift /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		DFD8ABC81CDAFABA00CF545D /* Build configuration list for PBXNativeTarget "QRSwift OSX" */ = {
+		"_______Confs_QRSwiftTests" /* Build configuration list for PBXNativeTarget "QRSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFD8ABC91CDAFABA00CF545D /* Debug */,
-				DFD8ABCA1CDAFABA00CF545D /* Release */,
+				"___DebugConf_QRSwiftTests" /* Debug */,
+				_ReleaseConf_QRSwiftTests /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DFD8AB8F1CDAF7D000CF545D /* Project object */;
+	rootObject = __RootObject_ /* Project object */;
 }

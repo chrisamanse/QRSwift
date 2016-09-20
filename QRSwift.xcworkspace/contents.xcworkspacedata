@@ -2,22 +2,22 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:QRSwift.playground">
-   </FileRef>
-   <FileRef
       location = "container:QRSwift.xcodeproj">
    </FileRef>
    <Group
       location = "container:"
       name = "Metadata">
       <FileRef
-         location = "group:Package.swift">
+         location = "group:.swift-version">
       </FileRef>
       <FileRef
-         location = "group:QRSwift.podspec">
+         location = "group:.travis.yml">
       </FileRef>
       <FileRef
          location = "group:LICENSE">
+      </FileRef>
+      <FileRef
+         location = "group:QRSwift.podspec">
       </FileRef>
       <FileRef
          location = "group:README.md">

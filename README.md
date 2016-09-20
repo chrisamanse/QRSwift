@@ -4,7 +4,7 @@
 [![spm compatible](https://img.shields.io/badge/spm-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/QRSwift.svg)](https://github.com/CocoaPods/CocoaPods)
-![Platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20linux-lightgrey.svg)
+![Platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20tvos%20%7C%20linux-lightgrey.svg)
 
 QRSwift is a Swift framework for generating QR codes.
 

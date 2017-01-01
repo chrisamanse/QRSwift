@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "QRSwift"
-  s.version      = "0.3.0"
+  s.version      = "0.3.1"
   s.summary      = "Swift framework for generating QR codes"
 
   s.description  = <<-DESC

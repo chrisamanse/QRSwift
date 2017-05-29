@@ -52,6 +52,6 @@ let image = generator.image(with: data, outputImageSize: CGSize(width: 128, heig
 
 # License
 
-Copyright (c) 2016 Joe Christopher Paul Amanse
+Copyright (c) 2017 Joe Christopher Paul Amanse
 
 This software is distributed under the [MIT License](./LICENSE).

@@ -9,10 +9,4 @@ let data = str.data(using: .utf8) ?? Data()
 
 let generator = QRCodeGenerator()
 
-do {
-    let image = try generator.outputImage(message: data)
-    
-    let enlargedImage = try generator.outputImage(message: data, size: CGSize(width: 64, height: 64))
-} catch QRCodeGeneratorError.dataTooBig {
-    print("Data too big!")
-}
+generator.image(with: data, outputImageSize: CGSize(width: 128, height: 128))

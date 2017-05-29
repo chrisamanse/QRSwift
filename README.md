@@ -37,20 +37,17 @@ $ carthage update
 
 ```swift
 
-var message = "Hello, World!"
+let message = "Hello, World!"
 
 // Encode message as Data
 let data = message.data(using: .utf8)!
 
 // Create a QR code generator instance
 let generator = QRCodeGenerator()
+generator.correctionLevel = .M
 
-// QR Code CIImage with default correction level and size
-let image = try? generator.outputImage(message: data)
-
-// Configured correction level and output image size
-let configuredImage = try? generator.outputImage(message: data, correctionLevel: .M, size: CGSize(width: 512, height: 512))
-
+// Generate image
+let image = generator.image(with: data, outputImageSize: CGSize(width: 128, height: 128))
 ```
 
 # License

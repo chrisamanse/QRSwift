@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		DF5FA10F1D91313400821F79 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 		DF9F5B2B1D9136AF00DC7EEB /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		DF9F5B2E1D9141F600DC7EEB /* QRSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QRSwift.playground; sourceTree = "<group>"; };
+		DF9F5B2E1D9141F600DC7EEB /* QRSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QRSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		__PBXFileRef_QRSwift.xcodeproj/Configs/Project.xcconfig /* QRSwift.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QRSwift.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_Tests/QRSwiftTests/QRSwiftTests.swift /* QRSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRSwiftTests.swift; sourceTree = "<group>"; };
@@ -179,7 +179,10 @@
 				LastUpgradeCheck = 9999;
 				TargetAttributes = {
 					"______Target_QRSwift" = {
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
+					};
+					"______Target_QRSwiftTests" = {
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -245,7 +248,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = QRSwift;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -260,7 +263,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks @executable_path/../Frameworks @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -281,7 +285,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -297,7 +301,8 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};

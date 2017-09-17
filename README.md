@@ -1,6 +1,6 @@
 # QRSwift
 [![Build Status](https://travis-ci.org/chrisamanse/QRSwift.svg?branch=master)](https://travis-ci.org/chrisamanse/QRSwift)
-![Swift Version](https://img.shields.io/badge/swift-3.0-orange.svg)
+![Swift Version](https://img.shields.io/badge/swift-4.0-orange.svg)
 [![spm compatible](https://img.shields.io/badge/spm-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/QRSwift.svg)](https://github.com/CocoaPods/CocoaPods)
@@ -43,7 +43,7 @@ let message = "Hello, World!"
 let data = message.data(using: .utf8)!
 
 // Create a QR code generator instance
-let generator = QRCodeGenerator()
+var generator = QRCodeGenerator()
 generator.correctionLevel = .M
 
 // Generate image

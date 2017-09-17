@@ -46,7 +46,7 @@ public struct QRCodeGenerator {
         
         let scaleTransform = CGAffineTransform(scaleX: size.width / image.extent.width,
                                                y: size.height / image.extent.height)
-        return image.applying(scaleTransform)
+        return image.transformed(by: scaleTransform)
     }
 }
 

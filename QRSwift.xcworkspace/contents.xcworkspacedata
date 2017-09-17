@@ -17,6 +17,9 @@
          location = "group:LICENSE">
       </FileRef>
       <FileRef
+         location = "group:Package.swift">
+      </FileRef>
+      <FileRef
          location = "group:QRSwift.podspec">
       </FileRef>
       <FileRef

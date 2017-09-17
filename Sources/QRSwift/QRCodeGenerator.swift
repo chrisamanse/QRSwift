@@ -25,7 +25,7 @@ public struct QRCodeGenerator {
         updateFilterCorrectionLevel()
     }
     
-    private func updateFilterCorrectionLevel() {
+    private mutating func updateFilterCorrectionLevel() {
         filter.setValue(correctionLevel.rawValue, forKey: Constants.inputCorrectionLevel)
     }
     
